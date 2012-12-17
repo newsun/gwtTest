@@ -4,7 +4,7 @@
 	<inherits name="com.google.gwt.user.User" />
 
 	<!-- Specify the app entry point class. -->
-	<entry-point class='com.symbio.sbtm.client.sbtm.SBTM' />
+	<entry-point class='com.symbio.sbtm.client.SBTM' />
 
 	<!-- Specify the paths for translatable code -->
 	<source path='client' />
