@@ -15,13 +15,9 @@
 		<servlet-name>greetServlet</servlet-name>
 		<url-pattern>/Example/greet</url-pattern>
 	</servlet-mapping>
-	<servlet-mapping>
-		<servlet-name>greetServlet</servlet-name>
-		<url-pattern>/com.symbio.sbtm.SBTMJUnit/Example/greet</url-pattern>
-	</servlet-mapping>
 	<!-- Default page to serve -->
 	<welcome-file-list>
-		<welcome-file>Example.html</welcome-file>
+		<welcome-file>login.html</welcome-file>
 	</welcome-file-list>
 
 </web-app>
