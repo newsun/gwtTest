@@ -1,20 +1,18 @@
 package com.symbio.sbtm.server;
 
-import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 import com.symbio.sbtm.client.LoginService;
+import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 
+/**
+ * The server side implementation of the RPC service.
+ */
 @SuppressWarnings("serial")
 public class LoginServiceImpl extends RemoteServiceServlet implements
 		LoginService {
-
 	@Override
-	public String greetServer(String name, String password)
+	public String loginServer(String name, String password)
 			throws IllegalArgumentException {
 		// TODO Auto-generated method stub
-		if (name.equals("admin") && password.equals(""))
-			return "Login successfully";
-		else
-			return "Invalid user name and password";
+		return null;
 	}
-
 }

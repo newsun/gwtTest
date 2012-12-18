@@ -7,17 +7,28 @@
 
 	<!-- Servlets -->
 	<servlet>
+		<servlet-name>loginServlet</servlet-name>
+		<servlet-class>com.symbio.sbtm.server.LoginServiceImpl</servlet-class>
+	</servlet>
+	<servlet>
 		<servlet-name>greetServlet</servlet-name>
 		<servlet-class>com.symbio.sbtm.server.GreetingServiceImpl</servlet-class>
 	</servlet>
-
+	
+	<servlet-mapping>
+		<servlet-name>loginServlet</servlet-name>
+		<url-pattern>/Login/login</url-pattern>
+	</servlet-mapping>
+	
 	<servlet-mapping>
 		<servlet-name>greetServlet</servlet-name>
-		<url-pattern>/Login/greet</url-pattern>
+		<url-pattern>/Example/greet</url-pattern>
 	</servlet-mapping>
+	
 	<!-- Default page to serve -->
 	<welcome-file-list>
 		<welcome-file>Login.html</welcome-file>
+		<welcome-file>Example.html</welcome-file>
 	</welcome-file-list>
 
 </web-app>
