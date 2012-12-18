@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module>
   <!-- Inherit our applications main module.                      -->
-  <inherits name='com.symbio.sbtm.test' />
+  <inherits name='com.symbio.sbtm.Example' />
 
   <!-- Specify the path to any remote services.                   -->
-  <servlet path="/test/greet" class="com.symbio.sbtm.server.GreetingServiceImpl" />
+  <servlet path="/Example/greet" class="com.symbio.sbtm.server.GreetingServiceImpl" />
 
 </module>
