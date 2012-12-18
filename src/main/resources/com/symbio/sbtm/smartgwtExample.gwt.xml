@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='smartGwtExample'>
+	<inherits name='com.google.gwt.user.User' />
+	<inherits name='com.smartgwt.SmartGwt' />
+	<inherits name="com.smartclient.theme.enterprise.Enterprise" />
+
+	<extend-property name="locale" values="zh_CN,de" />
+
+	<entry-point class='com.symbio.sbtm.client.smartGwtExample' />
+	<source path='client' />
+	<source path='shared' />
+
+</module>
