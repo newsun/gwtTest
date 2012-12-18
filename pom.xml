@@ -51,13 +51,11 @@
 			<scope>test</scope>
 		</dependency>
 		<!-- smartgwt -->
-		<!-- 
 		<dependency>
 			<groupId>com.smartgwt</groupId>
 			<artifactId>smartgwt</artifactId>
 			<version>3.1</version>
 		</dependency>
-		 -->
 	</dependencies>
 	<repositories>
 		<repository>
@@ -72,7 +70,6 @@
 	<build>
 		<!-- Generate compiled stuff in the folder used for developing mode -->
 		<outputDirectory>${webappDirectory}/WEB-INF/classes</outputDirectory>
-
 		<plugins>
 			<!-- java version -->
 			<plugin>
