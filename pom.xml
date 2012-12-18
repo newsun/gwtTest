@@ -50,8 +50,25 @@
 			<classifier>sources</classifier>
 			<scope>test</scope>
 		</dependency>
+		<!-- smartgwt -->
+		<!-- 
+		<dependency>
+			<groupId>com.smartgwt</groupId>
+			<artifactId>smartgwt</artifactId>
+			<version>3.1</version>
+		</dependency>
+		 -->
 	</dependencies>
-
+	<repositories>
+		<repository>
+			<id>smartgwt</id>
+			<name>SmartGwt</name>
+			<url>http://www.smartclient.com/maven2</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 	<build>
 		<!-- Generate compiled stuff in the folder used for developing mode -->
 		<outputDirectory>${webappDirectory}/WEB-INF/classes</outputDirectory>
@@ -76,15 +93,16 @@
 					<execution>
 						<goals>
 							<goal>compile</goal>
-							<!-- <goal>test</goal> -->
-							<!-- <goal>i18n</goal> <goal>generateAsync</goal> -->
+							<goal>test</goal>
+							<goal>i18n</goal>
+							<goal>generateAsync</goal>
 						</goals>
 					</execution>
 				</executions>
 				<!-- Plugin configuration. There are many available options, see gwt-maven-plugin 
 					documentation at codehaus.org -->
 				<configuration>
-					<runTarget>Example.html</runTarget>
+					<runTarget>Login.html</runTarget>
 					<hostedWebapp>${webappDirectory}</hostedWebapp>
 					<i18nMessagesBundle>com.symbio.sbtm.client.Messages</i18nMessagesBundle>
 				</configuration>
